@@ -13,7 +13,7 @@ return {
 		})
 
 		vim.keymap.set("n", "<leader>fm", function()
-			require("conform").format({ lsp_fallback = true })
+			require("conform").format({ async = true, lsp_fallback = true })
 		end, { desc = "General Format file" })
 	end,
 }
