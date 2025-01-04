@@ -19,6 +19,7 @@ return {
 					"tailwindcss",
 					"eslint",
 					"astro",
+					"svelte",
 				},
 			})
 		end,
@@ -64,6 +65,14 @@ return {
 			})
 
 			lspconfig.astro.setup({
+				capabilities = capabilities,
+			})
+
+			lspconfig.biome.setup({
+				capabilities = capabilities,
+			})
+
+			lspconfig.svelte.setup({
 				capabilities = capabilities,
 			})
 
