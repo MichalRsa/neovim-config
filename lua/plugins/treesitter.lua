@@ -29,6 +29,7 @@ return {
 				"css",
 				"blade",
 				"php",
+        "astro"
 				-- "svelte",
 			},
 			sync_install = false,

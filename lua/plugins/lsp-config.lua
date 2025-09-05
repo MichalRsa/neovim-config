@@ -21,6 +21,7 @@ return {
 					"eslint",
 					"astro",
 					"svelte",
+					"bashls",
 				},
 			})
 		end,
@@ -47,7 +48,7 @@ return {
 
 			lspconfig.html.setup({
 				capabilities = capabilities,
-				filetypes = { "html", "blade" },
+				filetypes = { "html", "blade", "javascriptreact", "typescriptreact" },
 			})
 
 			lspconfig.cssls.setup({
@@ -68,6 +69,7 @@ return {
 
 			lspconfig.eslint.setup({
 				capabilities = capabilities,
+				filetypes = { "javascript", "typescript", "javascriptreact", "typescriptreact" },
 			})
 
 			lspconfig.astro.setup({
@@ -79,6 +81,10 @@ return {
 			})
 
 			lspconfig.svelte.setup({
+				capabilities = capabilities,
+			})
+
+			lspconfig.bashls.setup({
 				capabilities = capabilities,
 			})
 

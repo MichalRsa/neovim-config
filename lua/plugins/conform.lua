@@ -7,9 +7,11 @@ return {
 				lua = { "stylua" },
 				-- Conform will run multiple formatters sequentially
 				javascript = { "prettierd", "prettier", stop_after_first = true },
+				javascriptreact = { "prettierd", "prettier", stop_after_first = true },
 				json = { "prettierd", "prettier", stop_after_first = true },
 				php = { "pint", "php_cs_fixer" },
 				blade = { "blade-formatter" },
+				sh = { "shfmt" },
 			},
 		})
 
