@@ -10,6 +10,8 @@ return {
 			vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 			vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
 
+			vim.keymap.set("n", "<leader>do", builtin.diagnostics, { desc = "Show diagnostics (workspace)" })
+
 			vim.keymap.set(
 				"n",
 				"<leader>fz",
